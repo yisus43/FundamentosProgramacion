@@ -19,3 +19,4 @@ b=int(b)
 c=(a*a+b*b)**(1/2)
 c=math.sqrt(a**2+b**2)
 print("El valor de la hipotenusa es:",c)
+
