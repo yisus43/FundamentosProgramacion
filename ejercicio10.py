@@ -1,14 +1,19 @@
-n1=input("Nota del parcial 1:")
-n1=int(n1)
-n2=input("Nota del parcial 2:")
-n2=int(n2)
-n3=input("Nota del parcial 3:")
-n3=int(n3)
-ne=input("Nota del examen:")
-ne=int(ne)
-nt=input("Nota del trabajo:")
-nt=int(nt)
-c=(n1+n2+n3)/3*0.55+0.3*ne+0.15*nt
-print=("Nota Final:",c)
+# Calificaciones parciales
+p1 = float(input("Calificación parcial 1: "))
+p2 = float(input("Calificación parcial 2: "))
+p3 = float(input("Calificación parcial 3: "))
 
+# Examen final
+examen_final = float(input("Calificación del examen final: "))
 
+# Trabajo final
+trabajo_final = float(input("Calificación del trabajo final: "))
+
+# Calcular el promedio de los parciales
+promedio_parciales = (p1 + p2 + p3) / 3
+
+# Calificación final
+calificacion_final = (promedio_parciales * 0.55) + (examen_final * 0.30) + (trabajo_final * 0.15)
+
+# Mostrar la calificación final
+print("Calificación final:", calificacion_final)
